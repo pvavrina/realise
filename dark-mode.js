@@ -1,3 +1,5 @@
+/* Declare the variable for the dark switch */
+
 let darkSwitch = document.getElementById("darkSwitch");
 window.addEventListener("load", function () {
   if (darkSwitch) {
@@ -8,6 +10,9 @@ window.addEventListener("load", function () {
   }
 });
 
+
+/* Store the dark theme in the DOM then switch to dark */
+
 function initTheme() {
   let darkThemeSelected =
     localStorage.getItem("darkSwitch") !== null &&
@@ -17,6 +22,9 @@ function initTheme() {
     ? document.body.setAttribute("data-theme", "dark")
     : document.body.removeAttribute("data-theme");
 }
+
+
+/* Check if the dark switch is activated */
 
 function resetTheme() {
   if (darkSwitch.checked) {
