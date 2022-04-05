@@ -26,6 +26,12 @@ CREATE TABLE Competences (
 PRIMARY KEY (ID)
 );
 
+CREATE TABLE CompetencesHeros (
+`ID` tinyint(1) NOT NULL,
+`HerosID` tinyint(1) NOT NULL
+);
+
+
 INSERT INTO Heros (ID, Nom, PV, Bonus, Defense, ArmeEnMain, Statut, Immunite)
 VALUES
 (1, 'Comar', 40, 2, 15, 1, 'joyeux', 'aucun'),
