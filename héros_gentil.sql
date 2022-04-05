@@ -22,7 +22,8 @@ CREATE TABLE Competences (
 `ID` tinyint(1) NOT NULL,
 `Type` ENUM('Statut', 'PV', 'Defense',
 'Bonus', 'ArmeEnMain', 'Immunite'),
-`Effet` varchar(50)
+`Effet` varchar(50),
+PRIMARY KEY (ID)
 );
 
 INSERT INTO Heros (ID, Nom, PV, Bonus, Defense, ArmeEnMain, Statut, Immunite)
