@@ -6,7 +6,8 @@ CREATE TABLE Heros (
 `Defense` tinyint(2) NOT NULL,
 `ArmeEnMain` tinyint(2) DEFAULT NULL,
 `Statut` varchar(100) NOT NULL,
-`Immunite` varchar(20) NOT NULL
+`Immunite` varchar(20) NOT NULL,
+PRIMARY KEY (ID)
 );
 
 CREATE TABLE Armes (
@@ -38,6 +39,7 @@ VALUES
 (4, 0, 'Feuille', 'tranchant', 5),
 (5, 0, 'Caillou', 'contondant', 5),
 (6, 0, 'Ciseau', 'perçant', 5);
+
 
 INSERT INTO Competences (ID, Type, Effet)
 VALUES
