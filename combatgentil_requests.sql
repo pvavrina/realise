@@ -1,0 +1,6 @@
+SELECT Nom FROM Heros ORDER BY Nom ASC;
+
+SELECT Nom,PV FROM Heros WHERE PV=40;
+
+
+
